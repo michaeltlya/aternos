@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Репетиторство - Уроки математики и английского</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #333;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #667eea;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .service {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+        input, textarea, button {
+            padding: 0.8rem;
+            font-size: 1rem;
+        }
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #5a67d8;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ваш Репетитор</h1>
+        <p>Качественные уроки по математике, физике и английскому языку</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="home">
+            <h2>Добро пожаловать!</h2>
+            <p>Индивидуальный подход к каждому ученику. Подготовка к ЕГЭ, ОГЭ и олимпиадам. Онлайн и оффлайн занятия.</p>
+        </section>
+        
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p>Опытный репетитор с 10-летним стажем. Выпускник МГУ. Помог сотням учеников сдать экзамены на 90+ баллов.</p>
+        </section>
+        
+        <section id="services">
+            <h2>Услуги</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Математика</h3>
+                    <p>Подготовка к ЕГЭ/ОГЭ. 1500 руб/час.</p>
+                </div>
+                <div class="service">
+                    <h3>Физика</h3>
+                    <p>Школьная программа и олимпиады. 1400 руб/час.</p>
+                </div>
+                <div class="service">
+                    <h3>Английский</h3>
+                    <p>Разговорный и грамматика. 1200 руб/час.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="reviews">
+            <h2>Отзывы</h2>
+            <blockquote>
+                "Благодаря репетитору сдал ЕГЭ на 95 баллов!" - Иван П.
+            </blockquote>
+            <blockquote>
+                "Отличный подход, ребенок полюбил математику." - Мария С.
+            </blockquote>
+        </section>
+        
+        <section id="contact">
+            <h2>Связаться со мной</h2>
+            <form action="#" method="post">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Телефон">
+                <textarea placeholder="Сообщение" rows="5" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            <p>Тел: +7 (XXX) XXX-XX-XX | Email: tutor@example.com</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Ваш Репетитор. Все права защищены.</p>
+    </footer>
+</body>
+</html>
